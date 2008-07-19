@@ -9,7 +9,6 @@
 #
 # Include architecture specific build rules.
 #
-
 ifndef ROOTDIR
 ROOTDIR=..
 endif
@@ -102,8 +101,12 @@ dir_$(CONFIG_LIB_LIBGETTEXT)	+= gettext
 dir_$(CONFIG_LIB_LIBGETTEXT_FORCE)  += gettext
 dir_$(CONFIG_LIB_LIBGLIB)	+= glib
 dir_$(CONFIG_LIB_LIBGLIB_FORCE)  += glib
+dir_$(CONFIG_LIB_LIBTREMOR)       += libtremor
+dir_$(CONFIG_LIB_LIBTREMOR_FORCE) += libtremor
 dir_$(CONFIG_LIB_SDL)       += sdl
 dir_$(CONFIG_LIB_SDL_FORCE) += sdl
+dir_$(CONFIG_LIB_SDL_MIXER)       += sdl_mixer
+dir_$(CONFIG_LIB_SDL_MIXER_FORCE) += sdl_mixer
 dir_$(CONFIG_LIB_AUDIOFILE) += audiofile
 dir_$(CONFIG_LIB_AUDIOFILE_FORCE) += audiofile
 
@@ -200,7 +203,9 @@ LINKLIBS=\
 	$(ROOTDIR)/lib/glib/src/glib/.libs/*.a \
 	$(ROOTDIR)/lib/glib/src/gmodule/.libs/*.a \
 	$(ROOTDIR)/lib/sdl/src/build/.libs/*.a \
-	$(ROOTDIR)/lib/audiofile/src/libaudiofile/.libs/*.a
+	$(ROOTDIR)/lib/audiofile/src/libaudiofile/.libs/*.a \
+	$(ROOTDIR)/lib/libtremor/src/.libs/*.a \
+	$(ROOTDIR)/lib/sdl_mixer/src/build/.libs/*.a 
 
 ##############################################################################
 

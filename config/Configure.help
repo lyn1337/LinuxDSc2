@@ -749,8 +749,18 @@ CONFIG_LIB_LIBAES_FORCE
   Only enable this if you want to force the library to be built.  The
   Config will make sure this library is built if it is needed.
 
+ CONFIG_LIB_TREMOR_FORCE
+  Tremor library.
+  Only enable this if you want to force the library to be built.  The
+  Config will make sure this library is built if it is needed.
+
  CONFIG_LIB_SDL_FORCE
   SDL library.
+  Only enable this if you want to force the library to be built.  The
+  Config will make sure this library is built if it is needed.
+
+ CONFIG_LIB_SDL_MIXER_FORCE
+  SDL_Mixer library.
   Only enable this if you want to force the library to be built.  The
   Config will make sure this library is built if it is needed.
 
@@ -1756,6 +1766,9 @@ CONFIG_USER_GAMES_CNIBBLES
 CONFIG_USER_GAMES_DUNGEON
   The Dungeon Adventure game.  To play, telnet to port 8899 or run
   dungeon from the command line.
+
+CONFIG_USER_GAMES_NOIZ2SA
+ Noiz2SA for the console.
 
 CONFIG_USER_GAMES_PACMAN
   Pacman for console.
@@ -3389,6 +3402,11 @@ CONFIG_USER_TINYLOGIN_INSTALLER
   commands that are compiled into the binary.  This needs 
   the /proc filesystem to work properly...
 
+CONFIG_USER_GAMES_MELITE
+  A version of Elite using the TinyGL library.  TinyGL is 
+  intended to be a very small implementation of a subset of
+  OpenGL* for embedded systems or games.
+
 CONFIG_LIB_TINYTCL
   Core library which provides a Tcl implementation based
   on Tcl 6.7 with some extensions for compatibility with
@@ -3923,6 +3941,8 @@ CONFIG_PROP_CLAMAV_HELPER
 CONFIG_USER_PIXIL
   The PIXIL PDA GUI from www.pixil.org.
 
+CONFIG_USER_CPSCAN
+  Simple console port scanner
 #
 # END of proprietary config help
 #
